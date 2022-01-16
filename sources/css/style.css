@@ -406,11 +406,9 @@ header ul li a:hover{
 
 @media(max-width:740px){
 .project-filter{
-    background-color: #f9f9f9;
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .project-filter-active{
-    background-color: #ffffff;
     border: 1px solid rgb(219, 219, 219);
 }
 .project-box{
@@ -423,10 +421,51 @@ header ul li a:hover{
     {
         font-size: 1.8rem;
     }
+    .article h2 {
+        font-size: 1em;
+      }
+      .article p {
+          font-size: 0.7em;
+      }
+      .listAbout ul li a{
+          font-size: 0.7em;
+      }
+      #home{
+          padding: 30px;
+      }
+      .content .textBox{
+          min-width: 400px;
+      }
+      header{
+          padding: 30px;
+      }
+      .sci{
+        bottom: 40px;
+        left: 40px;
+      }
 }
   /* responsive */
 @media screen and (max-width: 1024px){
-
+    .content .textBox{
+        max-width: 600px;
+    }
+    .content .textBox h2{
+        color: #fff;
+        font-size: 2em;
+        margin-bottom: 10px;
+        line-height: 1.4em;
+        font-weight: 700;
+    }
+    .content .textBox p{
+        color: #fff;
+        font-size: 1em;
+    }
+    .content .textBox a{
+        font-size: 1em;
+    }
+    .about{
+        max-width: 90%;
+    }
 }
 @media screen and (min-width: 1600px){
     .content .textBox{

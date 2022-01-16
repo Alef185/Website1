@@ -14,12 +14,14 @@
     <div id="particles-js"></div>
     <section id="home">
         <header>
+            <input type="checkbox" id="click">
             <a href="#home" class="logo"><img src="/sources/images/logo.png" alt=""></a>
+            <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
             <ul class="navigation">
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#projects" onclick="fechar()">Projetos</a></li>
+                <li><a href="#about" onclick="fechar()">Sobre Mim</a></li>
+                <li><a href="#portfolio" onclick="fechar()">Portfólio</a></li>
+                <li><a href="#contact" onclick="fechar()">Contato</a></li>
             </ul>
         </header>
         <div class="content">
@@ -208,6 +210,14 @@
                     }
                 });
             });
+
+            // script menu
+        function fechar() {
+        var inputCheckbox = document.getElementById('click');
+            if (inputCheckbox.checked === true) {
+                inputCheckbox.checked = false;
+            }
+        }
     </script>
 </body>
 </html>

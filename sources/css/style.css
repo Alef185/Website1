@@ -79,6 +79,15 @@ header ul li a:hover{
     background-position: 100%;
     cursor: pointer;
 }
+.menu-btn i{
+    color: #e0e0e0;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
 #particles-js {
     position: absolute;
     width: 100%;
@@ -413,6 +422,69 @@ header ul li a:hover{
 }
 .project-box{
     width:80%;
+}
+header{
+    position: fixed;
+    background: rgb(37, 37, 37);
+    box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
+    -webkit-box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
+    -moz-box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
+    height: 50px;
+}
+#click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+}
+.navigation{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #1a1a1a;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 999;
+    backdrop-filter: blur(20px);
+}
+#click:checked ~ ul{
+    left: 0%;
+}
+header ul li{
+    margin: 40px 0;
+    text-align: center;
+}
+header ul li a{
+    font-size: 20px;
+    display: block;
+    color: #e0e0e0;
+    margin-left: 0;
+}
+header ul li a:hover{
+    color: #fff;
+}
+.menu-btn i{
+    display: block;
+    z-index: 1000;
+    pointer-events: all;
+}
+.logo img{
+    max-width: 70px;
+}
+.sci{
+    z-index: 1;
+}
+.navigation{
+    z-index: 999 !important;
+}
+.content{
+    z-index: 1;
+}
+.imgBox{
+    z-index: 0;
+}
+.swiper{
+    z-index: 0;
 }
 }
 @media(max-width:550px){

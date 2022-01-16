@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="sources/images/logo.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -176,7 +177,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
@@ -223,13 +224,13 @@
         /*===== SCROLL REVEAL ANIMATION =====*/
         const sr = ScrollReveal({
             origin: 'bottom',
-            distance: '200px',
+            distance: '100px',
             duration: 2000,
             reset: true
         });
 
         // Home
-        sr.reveal('.rev',{}); 
+        sr.reveal('.rev',{scale: 0.5}); 
         sr.reveal('.rev2',{delay: 200}); 
         sr.reveal('.rev3',{delay: 400});
         sr.reveal('.rev4',{delay: 600});  
@@ -241,7 +242,7 @@
         sr.reveal('.rD',{delay: 300}); 
         sr.reveal('.rE',{delay: 400}); 
         sr.reveal('.rF',{delay: 500}); 
-
+        // mobile: false = caso queira funcionar apenas em pc
     </script>
     
 </body>

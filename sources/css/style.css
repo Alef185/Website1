@@ -443,6 +443,9 @@ header ul li a:hover{
         bottom: 40px;
         left: 40px;
       }
+      .imgBox{
+          display: none;
+      }
 }
   /* responsive */
 @media screen and (max-width: 1024px){
@@ -465,6 +468,16 @@ header ul li a:hover{
     }
     .about{
         max-width: 90%;
+    }
+    .swiper-slide{
+        font-size: 10em;
+    }
+    .swiper {
+        width: 300px;
+        height: 100%;
+    }
+    .content .textBox{
+        min-width: 60%;
     }
 }
 @media screen and (min-width: 1600px){

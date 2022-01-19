@@ -309,7 +309,108 @@ header ul li a:hover{
     border-radius: 5px;
     overflow: hidden;
 }
- 
+ /* contact ------------------------ */
+#contact{
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.headcont{
+     text-align: center;
+}
+.contact-title{
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.contact-subtitle{
+    color: #00ff95;
+    font-weight: 300;
+}
+.contactForm{
+    border-radius: 20px;
+    border: 1px solid #00ff95;
+    min-height: 500px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contact__container p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.contact__input{
+    margin: 10px 0px 10px 0px;
+    border-radius: 20px;
+    border: 1px solid #00ff95;
+    padding: 5px;
+    width: 95%;
+}
+.contact__input:focus{
+    color: #00ff95;
+    outline: #00ff95;
+    background-color: #1a1a1a;
+}
+.contact__textarea:focus{
+    color: #00ff95;
+    outline: #00ff95;
+    background-color: #1a1a1a;
+}
+.contact__textarea{
+    margin: 10px 0px 10px 0px;
+    border-radius: 20px;
+    border: 1px solid #00ff95;
+    padding: 5px;
+    max-width: 95%;
+    min-width: 95%;
+    min-height: 100px;
+    max-height: 100px;
+    font-size: 0.85em;
+}
+.contact__button{
+    cursor: pointer;
+    width: 100px;
+    padding: 5px 10px;
+    color: #1a1a1a;
+    background-color: #00ff95;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+/* footer */
+footer{
+    margin-top: 70px;
+    width: 100%;
+    height: fit-content;
+    background-color: #0f0f0f;
+    border-top: 2px solid #00ff95;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+}
+.footer-title h2{
+    color: #fff;
+}
+.footer-title span{
+    color: #00ff95;
+}
+.footer-title h3{
+    color: #fff;
+}
+.footer-title a{
+    text-decoration: none;
+    color: #00ff95;
+}
+code{
+    font-family: monospace;
+}
 /* about -------------------------------------- */
 #about{
     justify-content: center;
@@ -318,7 +419,7 @@ header ul li a:hover{
 .about{
     border-radius: 20px;
     border: 1px solid #00ff95;
-    min-height: 500px;
+    min-height: 600px;
     width: 1100px;
     margin-left: auto;
     margin-right: auto;
@@ -539,6 +640,9 @@ header ul li a:hover{
         font-size: 1em;
     }
     .about{
+        max-width: 90%;
+    }
+    .contactForm{
         max-width: 90%;
     }
     .swiper-slide{
